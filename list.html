@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>list.html</title>
+    <style>
+
+      li{
+        list-style-type: circle;
+        /*
+          other list styles can be default, disc, circle, square, and none
+          ordered lists can have list-style-type: simp-chinese-formal;
+        */
+        list-style-image: url("http://www.anime-expo.org/wp-content/themes/anime-expo/images/svg/logo-small-red.svg");
+        list-style-position: inside;
+      }
+
+      .ol {
+        color:blue;
+      }
+      .ul {
+        color:red;
+      }
+      /*
+        id selectors: THEY TAKE PRECEDENCE OVER CLASS SELECTORS
+      */
+      #title1 {
+        color:red;
+      }
+      #title2 {
+        color:blue;
+      }
+
+      /*
+        class selectors:
+        if you want the classes to be the same, connect them with commas
+      */
+      .ol,
+      .ul {
+        color:pink;
+      }
+
+      #unordered li{
+        list-style-type:none;
+      }
+      #ordered li{
+        list-style-image: url("https://qph.ec.quoracdn.net/main-thumb-144585749-50-jijgecucrxbwblqhzsbcpkizezernmkd.jpeg")
+      }
+
+      /*
+        selecting all items in the forest
+      */
+      #forest li{
+        list-style-image: url("https://i0.wp.com/legacytree.com/wp-content/uploads/legacy-tree-genealogists-leaves1.png?w=64&ssl=1");
+        /*color:green;*/
+      }
+
+      /*
+        selecting apple tree in the forest
+      */
+      .leaf.fruit{
+        font-family:sans-serif;
+        color:red;
+      }
+
+      /*
+        selecting a specific part of a paragraph
+      */
+      p > a{
+        font-style:italic;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1 id="title1">list.html</h1>
+    <h2 id="title2">Here's a list:</h2>
+    <ul id = "unordered">
+      <li class = ul> example item </li>
+    </ul>
+    <h2 id="title2">Here's another list:</h2>
+    <ol id = "ordered">
+      <li class = ol> ordered list item </li>
+    </ol>
+
+    <h2>Forest</h2>
+    <ul id="forest">
+     <li class="evergreen"><a>pine</a></li>
+     <li class="evergreen"><a>lodgepole</a></li>
+     <li class="evergreen fruit"><a>holly</a></li>
+     <li class="leaf fruit"><a>apple</a></li>
+     <li class="leaf"><a>oak</a></li>
+     <li class="leaf"><a>maple</a></li>
+    </ul>
+
+    <p>The proud-mooded <a href="#wederchief">Wederchief</a> replied to his question,<br>
+      <q>Hardy 'neath helmet: <q><a href="#higelac">Higelac's</a> mates are we;<br>
+        <a href="beowulf">Beowulf</a> hight I. To the bairn of Healfdene,<br>
+        The famous folk-leader, I freely will tell<br>
+        To thy prince my commission, if pleasantly hearing<br>
+        He’ll grant we may greet him so gracious to all men</q></p>
+    <h2><a href="index.html">Back to homepage</a></h2>
+  </body>
+</html>

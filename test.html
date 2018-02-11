@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+    <link rel="stylesheet" href="test.css">
+    <style>
+        /*
+          CSS
+          x space the list items at least 20 pixels from the left edge of the page
+          x space the list items at least 10 pixels from each other
+          x center the header
+          x keep the list at least 50 pixels from the header
+          x the book titles in the list should not be displayed in a serif font
+          x the header should use a different font than the list
+          x the text of header should be dark red
+          x break the CSS rules into two different .css files. One file should contain any spacing rules, the other any rules governing font faces or coloring. Bind both into your HTML document
+          x instead of numbers, have the list items indexed by the alphabet
+          x change the <ol> tag to <ul> (and the closing </ol> to </ul>) and style the list items to have square bullet points
+          download this simple triangle shape  and style the list items to use it
+        */
+        li{
+          font-family:Helvetica,fantasy;
+        }
+        h1{
+          font-family: fantasy;
+          color: darkred;
+        }
+        ul{
+          list-style-image: url("my_triangle.png");
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>test.html</h1>
+    <ul>
+        <li>A la Recherche de Temps Perdu</li>
+        <li>Middlemarch</li>
+        <li>Ulysses</li>
+        <li>Don Quixote</li>
+        <li>Moby Dick</li>
+        <li>Hamlet</li>
+        <li>War and Peace</li>
+        <li>The Odyssey</li>
+        <li>The Great Gatsby</li>
+        <li>The Divine Comedy</li>
+        <li>Madame Bovary</li>
+        <li>The Brothers Karamazov</li>
+        <li>One Hundred Years of Solitude</li>
+        <li>The Iliad</li>
+        <li>Lolita</li>
+        <li>Anna Karenina</li>
+        <li>Crime and Punishment</li>
+        <li>The Sound and the Fury</li>
+        <li>Wuthering Heights</li>
+        <li>Le Rouge et le Noir</li>
+    </ul>
+    <h2><a href=index.html>Back to Homepage</a></h2>
+</body>
+</html>

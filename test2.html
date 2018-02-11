@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Characters</title>
+    <style>
+        /*
+        x The female characters are in blue text, and the male characters are red
+        x Dorothea Brooke and Sydney Carton are bold text
+        x Joshua Rigg and Madame Defarge are italicized
+        x The list for Middlemarch is enumerated with roman numerals
+        x The list for A Tale of Two Cities is enumerated with alpha characters
+        x The list items for Middlemarch are spaced out more
+        x The list for Middlemarch has been moved rightward
+        Serif font is not used anywhere on the page
+
+        Can you achieve the same styling without adding any new tags (i.e., without adding <i> or <b> or <span>) ?
+        Feel free to modify the HTML, but try not to add any new id attributes, if possible.
+        */
+        body,
+        html{
+          font-family:cursive;
+        }
+        #main{
+          font-weight:bold;
+        }
+        #antagonist{
+          font-style:italic;
+        }
+        .female{
+          color:blue;
+        }
+        .male{
+          color:red;
+        }
+        #middlemarch{
+          line-height:20px;
+          list-style-position:inside;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Characters</h1>
+    <h2>Middlemarch</h2>
+    <h3>George Eliot</h3>
+    <ol type="I" id="middlemarch">
+        <li id="main" class="female">Dorothea Brooke</li>
+        <li class="female">Celia Brooke</li>
+        <li class="male">Edward Casaubon</li>
+        <li class="male">Sir James Chettam</li>
+        <li id="antagonist" class="male">Joshua Rigg</li>
+        <li class="male">Will Ladislaw</li>
+        <li class="male">Tertius Lydgate</li>
+        <li class="female">Rosamond Vincy</li>
+    </ol>
+    <h2>A Tale of Two Cities</h2>
+    <h3>Charles Dickens</h3>
+    <ol type="a" id="taletwocities">
+        <li class="male">Charels Danay</li>
+        <li id="main" class="male">Sydney Carton</li>
+        <li class="male">Doctor Manette</li>
+        <li class="female">Lucie Mantte</li>
+        <li id="antagonist" class="female">Madame Defarge</li>
+        <li class="female">Miss Pross</li>
+    </ol>
+  <h2><a href=index.html>Back to Homepage</a></h2>
+</body>
+</html>
